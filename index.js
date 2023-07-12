@@ -28,4 +28,4 @@ mintNFT("Hermes", "XXXL", "Crocodile", "Black", "Hermes");
 
 listNFTs();
 
-console.log("TOTAL NFT:", getTotalSupply());
+console.log("Total Supply:", getTotalSupply());
