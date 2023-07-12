@@ -1,29 +1,31 @@
-const NFTs =[ ];
+let collectionNFT = [];
 
-function mintNFT(nft) {
-    NFTs.push(nft);
-    return nft;
+function mintNFT(name, size, properties, color,  brand, ) {
+  const nft = {
+    name: name,
+    size: size,
+    properties: properties,
+    color: color,
+    brand: brand,
+    
+  };
+  collectionNFT.push(nft);
 }
 
 function listNFTs() {
-    for (let i = 0; i < NFTs.length; i++) {
-        console.log(NFTs[i]);
-    }
-    console.log("------------------");
+  for (let i = 0; i < collectionNFT.length; i++) {
+    console.log(collectionNFT[i]);
+  }
 }
 
 function getTotalSupply() {
-    console.log(Total Supply: ${NFTs.length});
-    console.log("------------------");
+  return collectionNFT.length;
 }
 
-// Call your functions below this line
+mintNFT("Coach", "XL", "Leather", "Brown", "Coach");
+mintNFT("Louis Vuitton","XXL", "Canvas", "Monogram", "Louis Vuitton");
+mintNFT("Hermes", "XXXL", "Crocodile", "Black", "Hermes");
 
 listNFTs();
 
-mintNFT({name: "Coach", size: "XL", properties: "Leather", color: "Brown", brand: "Coach"});
-mintNFT({name: "Louis Vuitton", size: "XXL", properties: "Canvas", color: "Monogram", brand: "Louis Vuitton"});
-mintNFT({name: "Hermes", size: "XXXL", properties: "Crocodile", color: "Black", brand: "Hermes"});
-listNFTs();
-
-getTotalSupply();
+console.log("TOTAL NFT:", getTotalSupply());
