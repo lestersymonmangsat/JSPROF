@@ -1,12 +1,4 @@
-const NFTs = [
-    {
-        name: "Chanel",
-        size: "M",
-        properties: "Canvas",
-        color: "Black",
-        brand: "Chanel"
-    }
-];
+const NFTs =[ ];
 
 function mintNFT(nft) {
     NFTs.push(nft);
@@ -21,7 +13,7 @@ function listNFTs() {
 }
 
 function getTotalSupply() {
-    console.log(`Total Supply: ${NFTs.length}`);
+    console.log(Total Supply: ${NFTs.length});
     console.log("------------------");
 }
 
