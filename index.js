@@ -1,6 +1,6 @@
 let collectionNFT = [];
 
-function mintNFT(name, size, properties, color,  brand, ) {
+function mintNFT(name, size, properties, color,  brand ) {
   const nft = {
     name: name,
     size: size,
